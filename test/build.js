@@ -11,7 +11,11 @@ rimraf(tmp, () => {
 		entry: `${src}/app.js`,
 		output: { path:tmp, filename:'out.js' },
 		plugins: [
-			new Lib({ hello:'world' })
+			new Lib({
+				'DEMO_FOO': 123,
+				'DEMO_BAR': '"world"',
+				'process.env.NODE_ENV': JSON.stringify('production'),
+			})
 		]
 	}, (err, stats) => {
 		if (err || stats.hasError) {
