@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "node test/build",
+    "test": "echo \"hi\";"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "webpack": "^2.6.1"
+  }
 }
