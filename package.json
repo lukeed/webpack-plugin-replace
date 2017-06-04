@@ -1,7 +1,7 @@
 {
   "name": "webpack-plugin-replace",
   "description": "Replace content while bundling.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "license": "MIT",
   "author": {
