@@ -1,12 +1,25 @@
 {
   "name": "webpack-plugin-replace",
+  "description": "",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "lukeed.com"
+  },
   "scripts": {
     "pretest": "node test/build",
     "test": "echo \"hi\";"
   },
   "keywords": [],
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
   "devDependencies": {
     "rimraf": "^2.6.1",
     "webpack": "^2.6.1"
