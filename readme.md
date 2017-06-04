@@ -25,6 +25,10 @@ module.exports = {
         /node_modules/,
         filepath => filepath.includes('ignore')
       ],
+      patterns: [{
+        regex: /throw\s+(new\s+)?(Type|Reference)?Error\s*\(/g,
+        value: 'return;('
+      }],
       values: {
         'process.env.NODE_ENV': JSON.stringify('production'),
         'FOO_BAR': '"hello world"',
@@ -57,6 +61,13 @@ Default: `true`
 If multiple conditions are provided, matching _any_ condition will include & scan the filepath for eligible replacements.
 
 > **Note:** By default, all filepaths are included!
+
+#### options.patterns
+
+Type: `Array`<br>
+Default: `[]`
+
+An array of `RegExp` pattern definitions. Each definition is an object with `regex <RegExp>` and `value <String|Function>` keys. If `value` is a function, it takes the same arguments as [`String.prototype.relace`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Specifying_a_function_as_a_parameter).
 
 #### options.values
 
