@@ -13,7 +13,16 @@
     "pretest": "node test/build",
     "test": "tape test/index.js | tap-spec"
   },
-  "keywords": [],
+  "keywords": [
+    "bundle",
+    "content",
+    "plugin",
+    "replace",
+    "string",
+    "text",
+    "webpack",
+    "webpack-plugin"
+  ],
   "files": [
     "lib"
   ],
