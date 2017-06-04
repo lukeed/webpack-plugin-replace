@@ -6,5 +6,7 @@ mri([]);
 console.log(`
 	ENV: process.env.NODE_ENV
 	BAR: DEMO_BAR
+	FOO: FOO_BAR
+	BAZ: FOO_BAZ
 	${ foo() }
 `);
