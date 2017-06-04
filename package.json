@@ -11,7 +11,7 @@
   },
   "scripts": {
     "pretest": "node test/build",
-    "test": "echo \"hi\";"
+    "test": "tape test/index.js | tap-spec"
   },
   "keywords": [],
   "files": [
@@ -23,6 +23,8 @@
   "devDependencies": {
     "mri": "^0.1.0",
     "rimraf": "^2.6.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
     "webpack": "^2.6.1"
   }
 }
