@@ -21,6 +21,7 @@
     "node": ">=4"
   },
   "devDependencies": {
+    "mri": "^0.1.0",
     "rimraf": "^2.6.1",
     "webpack": "^2.6.1"
   }

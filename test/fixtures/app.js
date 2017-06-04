@@ -1,7 +1,10 @@
+import mri from 'mri';
 import foo from './foo';
-foo();
+
+mri([]);
+
 console.log(`
 	ENV: process.env.NODE_ENV
-	FOO: DEMO_FOO
 	BAR: DEMO_BAR
+	${ foo() }
 `);

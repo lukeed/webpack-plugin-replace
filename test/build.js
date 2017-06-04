@@ -14,7 +14,12 @@ rimraf(tmp, () => {
 			new Lib({
 				'DEMO_FOO': 123,
 				'DEMO_BAR': '"world"',
+				'const FLAG': '"FLAGGG"',
 				'process.env.NODE_ENV': JSON.stringify('production'),
+				exclude: [/node_modules/, 'foo.js'],
+				include(filepath) {
+					return true;
+				}
 			})
 		]
 	}, (err, stats) => {
@@ -23,4 +28,3 @@ rimraf(tmp, () => {
 		}
 	});
 });
-
