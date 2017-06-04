@@ -20,7 +20,7 @@ rimraf(tmp, () => {
 					'process.env.NODE_ENV': JSON.stringify('production'),
 				},
 				patterns: [
-					['FOO_[^\*]{3}(\s)?', 'g', 123],
+					{ regex: /FOO_[^\*]{3}(\s)?/g, value:123 },
 				]
 			})
 		]
