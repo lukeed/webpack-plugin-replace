@@ -25,7 +25,7 @@ rimraf(tmp, () => {
 			})
 		]
 	}, (err, stats) => {
-		if (err || stats.hasError) {
+		if (err || stats.hasErrors()) {
 			return console.log('Build error!');
 		}
 	});
