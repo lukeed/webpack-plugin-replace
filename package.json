@@ -9,6 +9,10 @@
     "email": "luke.edwards05@gmail.com",
     "url": "lukeed.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukeed/webpack-plugin-replace.git"
+  },
   "scripts": {
     "pretest": "node test/build",
     "test": "tape test/index.js | tap-spec"
